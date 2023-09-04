@@ -1,0 +1,240 @@
+/* below is the picture animation */
+.PicAnimate{
+    width: 460px;
+    height: 346px;
+    /* border: 1px solid red; */
+    border-radius: 13%;
+    display: flex;
+    position: relative;
+    margin: 10px auto;
+    justify-content: center;
+    background-image: url("carouselPics/anniversary.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: PicAnimateMe;
+    animation-duration: 40s;
+    animation-delay: 2s; 
+    animation-iteration-count: infinite;
+    
+}
+
+/* below is the occasion animation */
+.occasion-wrapper{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.occasion{
+  display: inline-flex;
+  width: 120px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffd6d6;
+  color: #8f1919;
+  border-radius: 6%;
+  margin: 5px;
+  padding: 3px;
+  animation-name: occasion-animate;
+  
+}
+
+
+@media screen and (max-width:460px){
+  .PicAnimate{
+    width: 340px;
+    height: 226px;
+    /* border: 1px solid red; */
+    border-radius: 13%;
+    display: flex;
+    position: relative;
+    margin: 10px auto;
+    justify-content: center;
+    background-image: url("carouselPics/anniversary.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: PicAnimateMe;
+    animation-duration: 40s;
+    animation-delay: 2s; 
+    animation-iteration-count: infinite;
+}}
+
+@keyframes PicAnimateMe {
+    0% {
+      background-image: url("carouselPics/anniversary.jpg");
+      
+      
+    }
+    10% {
+      background-image: url("carouselPics/birthday.jpg");
+    }
+    20% {
+      background-image: url("carouselPics/gathering.jpg");
+    }
+    30% {
+      background-image: url("carouselPics/graduation.jpg");
+    }
+    40% {
+      background-image: url("carouselPics/loveone.jpg");
+    }
+    50% {
+      background-image: url("carouselPics/mothersday.jpg");
+    }
+    60% {
+      background-image: url("carouselPics/valentines.jpg");
+    }
+    70% {
+        background-image: url("carouselPics/wedding.jpg");
+      }
+    80% {
+        background-image: url("carouselPics/funeral.jpg");
+      }
+    90% {
+        background-image: url("carouselPics/sympathy.jpg");
+      }
+    100% {
+        background-image: url("carouselPics/anniversary.jpg");
+      }
+  }
+
+  /* below is the sidebar and occasion pictures */
+
+.spacer{
+  margin: 5px 0;
+}
+
+ .middle-menu{
+  display: flex;
+  width: 100%;
+  background-color: #ffd6d6;
+  /* border: 1px solid yellow; */
+  flex-wrap: wrap;
+  margin: 5px 5px 15px 5px;
+ }
+
+.sideMenu{
+  flex-basis: 25%;
+  /* border: 1px solid blue; */
+  
+}
+
+.sideMenu-List{
+  /* border: 1px solid blue; */
+  height: 300px ;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.sideMenuHeader{
+  position: sticky;
+  width: 100%;
+  background-color: #8f1919;
+  color: #ffd6d6;
+  /* font-family:'Indie Flower', cursive;
+  font-size: 14px; */
+  text-align: center;
+  top: 0;
+}
+
+ .sideMenu-List ul{
+  background-color: #ffd6d6;
+}
+.sideMenu-List ul li{
+  text-align: center;
+  color: #8f1919;
+  margin: 5px 0;
+}
+
+.sideMenu-List ul li:hover{
+  text-align: center;
+  color: #ebeae3;
+  background: #ce5c5c;
+  margin: 5px 0;
+}
+
+.middle-space{
+  flex-basis: 1%;
+}
+.pictureDisplay{
+  flex-basis: 74%;
+  /* background-color: #ffd6d6; */
+  /* border: 1px solid rgb(231, 23, 203); */
+  text-align: center;
+  position: relative;
+  
+}
+.wrapper-main-label{
+  position: sticky;
+  width: 100%;
+  background-color: #8f1919;
+  color: #ffd6d6;
+  /* font-family:'Indie Flower', cursive;; */
+  text-align: center;
+}
+
+
+.wrapper-main, .wrapper-main2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: #ffd6d6;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  
+}
+
+
+.wrapper-item{
+  min-width: 18%;
+  background: #ffd6d6;
+  margin: 22px 12px 2px 12px;
+}
+
+@media screen and (max-width:768px){
+  .wrapper-item{
+    min-width: 20%;
+  }
+}
+
+.left1, .left2 {
+  position: absolute;
+  width:25px;
+  height:45px;
+  border-radius: 8%;
+  align-self: center;
+  background-color:#8f1919;
+  color:#ffd6d6;
+  left: 0;
+  transform: translateY(-50%);
+}
+.right1, .right2 {
+  position: absolute;
+  width:25px;
+  height:45px;
+  border-radius: 8%;
+  align-self: center;
+  background-color:#8f1919;
+  color:#ffd6d6;
+  right: .2%;
+  transform: translateY(-50%);
+}
+
+/* .left1:hover{
+  background-color:black;
+  color: white;
+} */
+
+
+.wrapper-main::-webkit-scrollbar{
+  width: 0;
+}
+
+.wrapper-main2::-webkit-scrollbar{
+  width: 0;
+}
+
+
