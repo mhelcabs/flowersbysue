@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+
+    <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"crossorigin="anonymous">
+    </script>
+
+    <script
+        src="https://kit.fontawesome.com/a59b9b09ab.js"
+        crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="myIndexCSS.css" />
+    <link rel="stylesheet" href="myProductsCSS.css" />
+    <link rel="stylesheet" href="gmap.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&display=swap" rel="stylesheet"/>
+
+  </head>
+  
+<body>
+    <!-- below is the sticky header -->
+    <div class="navHeader sticky-top">
+      <div class="nav-logo">
+        <a href="#"
+          ><img src="pictures/logoT1.png" width="40%" height="auto"
+        /></a>
+      </div>
+      <!-- below is the header menu -->
+      <div class="nav-menu list-unstyled d-flex">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="products.html">Products</a></li>
+        <li class="nav-item">
+          <button class="AboutOpen" style="color: #8f1919">
+          Contact Us<i class="fa fa-caret-down"></i>
+          </button>
+        </li>
+      </div>
+    </div>
+    
+    <div class="About-Menu d-none">
+      <ul class="list-unstyled" style="width: auto;">
+        <li class="nav-item float-right d-block">
+          <button class="AboutClose"><i class="fa fa-window-close"></i>
+          </button>
+        </li>
+        <br class="mb-2">
+       
+        <li class="BusInfo nav-item d-inline-block"><a href="#footer">About Us</a></li>
+        <li class="nav-item MapOpen"><a href="#">Map Location</a></li>
+        <li class="nav-item MallOpen"><a href="#">Mall Location</a></li>
+      </ul>
+    </div>
+
+<!-- below is for the map location -->
+    <div class=" mapLocation mapOuter d-none mt-5">
+      <div class="float-right d-inline-block">
+        <button class="MapClose"><i class="fa fa-window-close"></i>
+        </button>
+      </div>
+      <div class="GMap_canvas">
+        <iframe class="GMap_iframe" width="100%" frameborder="0"  scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=tesco extra shopping maynooth&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+        </iframe>
+      </div>
+    </div>
+
+    
+<!-- below is the mall location -->
+    <div class="mallLocation container d-none mt-2">
+      <div class="float-right d-inline-block">
+        <button class="MallClose"><i class="fa fa-window-close"></i>
+        </button>
+      </div>
+      <div>
+        <img src="pictures/mallLocation.JPG" class="img-fluid">
+      </div>
+    </div>
+
+<!-- below is the carousel -->
+
+
+  <div class="occasion-wrapper">
+ 
+    <div class="occasion" id="slide-0">Anniversary</div>
+    <div class="occasion" id="slide-1">Birthday</div>
+    <div class="occasion" id="slide-2">Gathering</div>
+    <div class="occasion" id="slide-3">Graduation</div>
+    <div class="occasion" id="slide-4">Love One</div>
+    <div class="occasion" id="slide-5">Mother's Day</div>
+    <div class="occasion" id="slide-6">Valentine's Day</div>
+    <div class="occasion" id="slide-7">Wedding</div>
+    <div class="occasion" id="slide-8">Funeral</div>
+    <div class="occasion" id="slide-9">Sympathy</div>
+    <!-- <div class="occasion" id="slide-10">Congratulation</div> -->
+  
+  </div>
+
+  <div class="PicAnimate"></div>
+  <div><hr style="background-color: #8f1919; height: 2px;"></div>
+
+  <div class="spacer"></div>
+  <!-- below is the sidebar and occasion pictures -->
+  <div class="middle-menu">
+  
+    <div class="sideMenu">
+
+      <div class="sideMenu-List">
+        <ul class="mb-2 list-unstyled">
+          <label class="sideMenuHeader ">We arrange flowers for any occasion, like:</label>
+          <li>Anniversary</li>
+          <li>Birthday</li>
+          <li>Gathering</li>
+          <li>Graduation</li>
+          <li>Congratulation</li>
+          <li>Thank You</li>
+          <li>Get well soon!</li>
+          <li>Love One</li>
+          <li>Mother's Day</li>
+          <li>Father's Day</li>
+          <li>Valentines Day</li>
+          <li>Wedding</li>
+          <li>Funeral</li>
+          <li>Sympathy</li>
+
+          <!-- <li><a href="#">Birthday</a></li>
+          <li><a href="#">Gathering</a></li>
+          <li><a href="#">Graduation</a></li>
+          <li><a href="#">Congratulation</a></li>
+          <li><a href="#">Thank You</a></li>
+          <li><a href="#">Get well soon!</a></li>
+          <li><a href="#">Love One</a></li>
+          <li><a href="#">Mother's Day</a></li>
+          <li><a href="#">Father's Day</a></li>
+          <li><a href="#">Valentine's Day</a></li>
+          <li><a href="#">Wedding</a></li>
+          <li><a href="#">Funeral</a></li>
+          <li><a href="#">Sympathy</a></li> -->
+        </ul>
+      </div>
+      
+      <div class="favorite">
+        <label class="sideMenuHeader">Best Picks!</label> 
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="flowerPics/bG3.jpg" alt="1st slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="flowerPics/bG5.jpg" alt="2nd slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="flowerPics/bG8.jpg" alt="3rd slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="flowerPics/bG10.jpg" alt="4th slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="flowerPics/bG11.jpg" alt="5th slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="flowerPics/bG14.jpg" alt="6th slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="flowerPics/bG15.jpg" alt="7th slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="flowerPics/bG16.jpg" alt="8th slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="middle-space"></div>
+
+    <div class="pictureDisplay">
+
+      <label class="wrapper-main-label">Best for all occasion:</label>
+      
+      <div class="wrapper-main"> 
+        
+        <button class="left1" onclick="leftScroll1()">
+          <i class="fas fa-chevron-left "></i>
+        </button>
+              
+          <div class="wrapper-item col-lg-3 col-md-2">
+            <img src="flowerPics/b1.jpg" class="img-fluid">
+          </div>
+          <div class="wrapper-item col-lg-3 col-md-2">
+            <img src="flowerPics/b2.jpg" class="img-fluid">
+          </div>
+          <div class="wrapper-item col-lg-3 col-md-2">
+            <img src="flowerPics/b4.jpg" class="img-fluid">
+          </div>
+          <div class="wrapper-item col-lg-3 col-md-2">
+            <img src="flowerPics/b6.jpg" class="img-fluid">
+          </div>
+          <div class="wrapper-item col-lg-3 col-md-2">
+            <img src="flowerPics/b7.jpg" class="img-fluid">
+          </div>
+          <div class="wrapper-item col-lg-3 col-md-2">
+            <img src="flowerPics/b9.jpg" class="img-fluid">
+          </div>
+          <div class="wrapper-item col-lg-3 col-md-2">
+            <img src="flowerPics/b12.jpg" class="img-fluid">
+          </div>
+          <div class="wrapper-item col-lg-3 col-md-2">
+            <img src="flowerPics/b13.jpg" class="img-fluid">
+          </div>
+          <div class="wrapper-item col-lg-3 col-md-2">
+            <img src="flowerPics/b17.jpg" class="img-fluid">
+          </div>
+          <div class="wrapper-item col-lg-3 col-md-2">
+            <img src="flowerPics/b18.jpg" class="img-fluid">
+          </div>
+          <div class="wrapper-item col-lg-3 col-md-2">
+            <img src="flowerPics/b19.jpg" class="img-fluid">
+          </div>
+          
+          
+        <button class="right1" onclick="rightScroll1()">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <label class="wrapper-main-label mt-2">Wreath Flower Arrangement</label>
+      
+      <div class="wrapper-main2"> 
+        
+        <button class="left2" onclick="leftScroll2()">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+              
+          <div class="wrapper-item col-lg-3 col-md-2">
+            <img src="flowerPics/c1.jpg" class="img-fluid">
+          </div>
+          <div class="wrapper-item col-lg-3 col-md-2">
+            <img src="flowerPics/c2.jpg" class="img-fluid">
+          </div>
+          <div class="wrapper-item col-lg-3 col-md-2">
+            <img src="flowerPics/c3.jpg" class="img-fluid">
+          </div>
+          <div class="wrapper-item col-lg-3 col-md-2">
+            <img src="flowerPics/c4.jpg" class="img-fluid">
+          </div>
+          <div class="wrapper-item col-lg-3 col-md-2">
+            <img src="flowerPics/c5.jpg" class="img-fluid">
+          </div>
+          <div class="wrapper-item col-lg-3 col-md-2">
+            <img src="flowerPics/c6.jpg" class="img-fluid">
+          </div>
+          <div class="wrapper-item col-lg-3 col-md-2">
+            <img src="flowerPics/c7.jpg" class="img-fluid">
+          </div>
+        <button class="right2" onclick="rightScroll2()">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+    
+      </div>
+    
+    </div>
+  
+  </div>
+
+    <div>
+      
+    </div>
+
+  <!-- below is the footer -->
+    <div class="spacer"></div>
+    <div class="container-fluid mt-5"  id="footer">
+      <div class="row">
+        <div class="col-sm-3 pl-4" id="leftFooter">
+        <img src="pictures/logo2.png" class="img-fluid" />
+        </div>
+        <div class="col-sm-6 p-0" id="centerFooter">
+        <h6><i class="fa fa-clock-o mr-2"></i>Monday-Saturday 9AM-7PM, Sunday 9AM-5PM</h6>
+        <h6><i class="fa fa-phone mr-2"></i>(01)-628-9633, (353)-894-839-660</h6>
+        <h6>
+          <i class="fa fa-facebook mr-2"></i
+          ><a href="https://www.facebook.com/susan.lugtu.391" target="_blank"
+            >Facebook Account Link</a
+          >
+        </h6>
+
+        <h6>
+          <i class="fa fa-map-marker mr-2"></i>Carton Retail Park Tesco
+          Extra Shopping Centre, Maynooth Co., Kildare W23W6X3, Ireland
+        </h6>
+        </div>
+        <div class="col-sm-3 position-relative pr-4" id="rightFooter">
+          <img src="pictures/logo1.png" class="img-fluid float-right" />
+        </div>
+      </div>
+    </div>
+
+        
+
+
+<script>
+  function leftScroll1() {
+    const left = document.querySelector(".wrapper-main");
+    left.scrollBy(-200, 0);
+  }
+  function rightScroll1() {
+    const right = document.querySelector(".wrapper-main");
+    right.scrollBy(200, 0);
+  }
+
+  function leftScroll2() {
+    const left = document.querySelector(".wrapper-main2");
+    left.scrollBy(-200, 0);
+  }
+  function rightScroll2() {
+    const right = document.querySelector(".wrapper-main2");
+    right.scrollBy(200, 0);
+  }
+</script>
+
+
+<script>
+  const $AboutMenu = $(".About-Menu");
+  const $MapLocation =$(".mapLocation");
+  const $MallLocation =$(".mallLocation");
+  const $Niajan=$(".niajan");
+
+  
+
+  $("document").ready(function () {
+
+   
+    
+    setInterval(function(){countdown4s()},40000);
+     function countdown4s() { 
+      $(".occasion").css("background-color","#ffd6d6")
+                    .css("color","#8f1919")
+      $("#slide-0").css("background-color","#8f1919")
+                    .css("color","#ffd6d6")
+
+        var counter;
+        let number = 1;
+        let interval = setInterval(() =>  {
+            counter =  number++; 
+
+              if(number == 11) {
+                clearInterval(interval);
+              } 
+          
+              $("#slide-"+counter).css("background-color","#8f1919")
+                                  .css("color","#ffd6d6")
+           console.log(counter)
+        }, 4000);// repeat every 4 second
+       
+
+      } countdown4s()
+   
+  
+    
+    $(".AboutOpen").on("click", () => {
+      $AboutMenu.removeClass("d-none");
+      $(window).scrollTop(0);
+    });
+    $(".AboutClose").on("click", () => {
+      $AboutMenu.addClass("d-none");
+    });
+
+    $(".BusInfo").on("click",()=>{
+      $AboutMenu.addClass("d-none");
+    })
+
+    $(".MapOpen").on("click",()=>{
+      $AboutMenu.addClass("d-none");
+      $MapLocation.removeClass("d-none");
+      alert("Please click the plus sign thrice to show Flowers by Sue location. Note: the shop is inside the TESCO Extra Shopping Mall")
+      
+    })
+    $(".MapClose").on("click",()=>{
+      $MapLocation.addClass("d-none")
+      
+    })
+    $(".MallOpen").on("click",()=>{
+      $AboutMenu.addClass("d-none");
+      $MallLocation.removeClass("d-none")
+    })
+    $(".MallClose").on("click",()=>{
+      $MallLocation.addClass("d-none")
+    })
+   
+
+   
+
+  });
+
+  
+
+</script>
+
+
+
+</body>
+</html>
