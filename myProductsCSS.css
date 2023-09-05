@@ -143,12 +143,14 @@
 }
 .sideMenu-List ul li{
   text-align: center;
+  font-size: 2vh;
   color: #8f1919;
   margin: 5px 0;
 }
 
 .sideMenu-List ul li:hover{
   text-align: center;
+  font-size: 2vh;
   color: #ebeae3;
   background: #ce5c5c;
   margin: 5px 0;
@@ -194,11 +196,12 @@
   margin: 22px 12px 2px 12px;
 }
 
-@media screen and (max-width:768px){
+/* @media screen and (max-width:613px){
   .wrapper-item{
-    min-width: 20%;
+    min-width: 22%;
+    margin: 22px 6px 2px 6px;
   }
-}
+} */
 
 .left1, .left2 {
   position: absolute;
@@ -237,4 +240,14 @@
   width: 0;
 }
 
+@media screen and (max-width:613px){
+  .middle-menu{
+    display: block;
+  }
 
+  .sideMenu{
+    justify-content: center;
+  }
+
+  
+}
