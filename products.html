@@ -358,8 +358,9 @@
    
     
     setInterval(function(){countdown4s()},40000);
+
      function countdown4s() { 
-      $(".occasion col-2").css("background-color","#ffd6d6")
+      $(".occasion").css("background-color","#ffd6d6")
                     .css("color","#8f1919")
       $("#slide-0").css("background-color","#8f1919")
                     .css("color","#ffd6d6")
@@ -369,7 +370,7 @@
         let interval = setInterval(() =>  {
             counter =  number++; 
 
-              if(number == 11) {
+              if(number ===11) {
                 clearInterval(interval);
               } 
           
@@ -377,8 +378,6 @@
                                   .css("color","#ffd6d6")
            console.log(counter)
         }, 4000);// repeat every 4 second
-       
-
       } countdown4s()
    
   

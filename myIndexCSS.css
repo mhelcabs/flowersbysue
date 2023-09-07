@@ -76,7 +76,10 @@
     transform: scale(1.2);
   }
 
- 
+ .hrLine{
+    width: 100%;
+    border: 1px solid #8f1919;
+ }
 
 @media screen and (max-width:768px) {
     .nav-logo a img{

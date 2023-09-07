@@ -63,9 +63,7 @@
 
 @keyframes PicAnimateMe {
     0% {
-      background-image: url("carouselPics/anniversary.jpg");
-      
-      
+      background-image: url("carouselPics/anniversary.jpg");  
     }
     10% {
       background-image: url("carouselPics/birthday.jpg");
@@ -116,13 +114,13 @@
 
 .sideMenu{
   flex-basis: 25%;
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   
 }
 
 .sideMenu-List{
   /* border: 1px solid blue; */
-  height: 300px ;
+  height: 300px;
   overflow-y: auto;
   scroll-behavior: smooth;
 }
@@ -143,18 +141,19 @@
 }
 .sideMenu-List ul li{
   text-align: center;
-  font-size: 2vh;
+  font-size: 2.5vh;
   color: #8f1919;
   margin: 5px 0;
 }
 
 .sideMenu-List ul li:hover{
   text-align: center;
-  font-size: 2vh;
+  font-size: 2.5vh;
   color: #ebeae3;
   background: #ce5c5c;
   margin: 5px 0;
 }
+
 
 .middle-space{
   flex-basis: 1%;
@@ -193,15 +192,48 @@
 .wrapper-item{
   min-width: 18%;
   background: #ffd6d6;
-  margin: 22px 12px 2px 12px;
+  margin: 22px 2px 2px 2px;
 }
 
-/* @media screen and (max-width:613px){
+@media screen and (max-width:613px){
+
+  .middle-menu{
+    display: block;
+  
+  }
+  /* .sideMenu{
+    display: block;
+    position: relative;
+  } */
+  /* .favorite{
+   
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  } */
+
+  .sideMenu-List ul li{
+    text-align: center;
+    font-size: 3.5vh;
+    color: #8f1919;
+    margin: 5px 0;
+  }
+  
+  .sideMenu-List ul li:hover{
+    text-align: center;
+    font-size: 3.5vh;
+    color: #ebeae3;
+    background: #ce5c5c;
+    margin: 5px 0;
+  }
   .wrapper-item{
     min-width: 22%;
-    margin: 22px 6px 2px 6px;
+    margin: 22px 2px 2px 2px;
+    flex: 0 0 auto;
+    width: 33.333333%;
   }
-} */
+
+}
 
 .left1, .left2 {
   position: absolute;
@@ -240,14 +272,4 @@
   width: 0;
 }
 
-@media screen and (max-width:613px){
-  .middle-menu{
-    display: block;
-  }
 
-  .sideMenu{
-    justify-content: center;
-  }
-
-  
-}
